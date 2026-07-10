@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+   	<meta name="keywords" content="AI Gateway, Africa Online AI, AI, AI Tools"/>
+
+<meta name="Author" content="Salmanda"/> 
+
+<meta name="revised" content="Profiler, 26/6/2026"/>
+ 
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    
+    <meta name="mobile-web-app-capable" content="yes"/>
+    
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <meta name="msapplication-starturl" content=""/>
+    
+     <meta name="robots"
+content="noindex,nofollow"/> 
+    
+    <meta name="theme-color" content="teal"/> 
+  
+  <link rel="icon" type="image" href="africaOnlineIconn.png"/>
+  
+  <title>Africa Online AI Gateway</title>
+  
+  <style>
+    :root {
+      --accent: teal;
+      --accent-dark: #0b6abf;
+      --muted: orange;
+      --bg: lightgray;
+      --radius: 12px;
+      --shadow: 0 6px 18px rgba(16,24,40,0.08);
+    }
+
+    * {
+    	 box-sizing: border-box; margin: 0; padding: 0;
+    	  }
+    	  
+    body {
+      font-family: georgia;
+      padding: 1px;
+      background: var(--bg);
+      color: #111;
+      line-height: 1.5;
+      text-align:center;
+      margin-top:5px;
+    }
+    
+    .nav-inner {
+      max-width: 1100px;
+      margin: auto;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      background: var(--accent);
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 14px;
+      border-radius: var(--radius);
+      border: 1px solid orange;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid orange;
+      background: gray;
+      font-size: 10.5px;
+    }
+
+    nav a:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .cta {
+      background: var(--accent);
+      color: orange;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: 1px solid orange;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 2px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+ 
+    .hero p {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    @media (max-width: 800px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+    section {
+      max-width: 1100px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: teal;
+    }
+    
+    h1,h6{
+    	color: orange;
+    	font-size: 12px;
+    	border: 1px solid orange;
+    	border-radius: 4px;
+    	background: teal
+    }
+    
+    i{
+    	font-weight: bold;
+    	color: black;
+    	text-shadow: 1px 1px 2px teal;
+    }
+    
+    p{
+    	color: black;
+    	text-shadow: 1px 0px 0px teal;
+    	font-size: 16px;
+    }
+
+    .card {
+      background: teal;
+      border-radius: var(--radius);
+      padding: 15px;
+      box-shadow: var(--shadow);
+      border: 1px solid orange;
+      color: orange;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: var(--radius);
+      border: 1px solid teal;
+      width: 100%;
+      background: orange;
+    }
+
+    button {
+      background: var(--accent);
+      color: orange;
+      border: none;
+      padding: 10px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      border: 1px solid orange;
+    }
+    
+    span {
+      background: var(--accent);
+      color: orange;
+      border: none;
+      padding: 2px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 1px solid orange;
+    }
+
+    footer {
+      background: teal;
+      color: orange;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border: 1px solid orange;
+      border-radius: 6px;
+    }
+    
+    .picturee{
+width: 70px;
+height: 70px;
+border: 1px solid orange;
+border-radius: 35px;
+padding: 1px;
+margin-top: 6px;
+}
+
+/*floating button css*/
+    .floating-btn {
+      position: fixed;
+      bottom: 5px;
+      right: 5px;
+      background-color:teal;
+      color: white;
+      border: solid orange 1px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background-color 0.3s; 
+    }  
+
+    .floating-btn:hover {
+      background-color: orange;
+    }
+    /*end floating button css*/
+      
+      .safetyTips{
+border: solid orange 1px;
+border-radius: 4px;
+background: gray;
+margin: 10px;
+font-size: 15px;
+text-align: left;
+padding: 3px;
+}
+
+/* Overlay background */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+/* Alert box css*/
+    .alert-box {
+      background: lightgray;
+      width: 300px;
+      padding: 20px;
+      margin: 100px auto;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px solid orange;
+    }
+    /* End alert box css*/
+    
+    a{
+    	text-decoration:none;
+    	text-shadow: 1px 0px 0px teal;
+    	color: maroon;
+    	font-size:18px;
+    	border-radius: 5px;
+    border: 1px solid maroon;
+    background-color:orange;
+    }
+    
+    .picturee{
+width: 30px;
+height: 30px;
+border: 1px solid orange;
+border-radius: 20px;
+padding: 1px;
+margin-top: 6px;
+}
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        &nbsp; <li><a onclick="color(this); home();">🏡 Home</a></li>
+        
+          <li><a onclick="color(this); ebookStore();" >📚 E-Book Store</a></li>
+          
+          <li><a onclick="color(this); vlibrary();">📖 Library</a></li>
+          
+          <li><a style="color: orange;" onclick="color(this);" href="#contact">✉ Messages</a></li>
+        </ul>
+      </nav>
+      
+      <!--custom alert-->
+  <div class="overlay" id="alertOverlay">
+    <div class="alert-box"><img class="picturee" src="africaOnlineIconn.png"/>
+      <h6>Africa Online AI Gateway</h6><br>
+      <p style="background: teal; color: orange; border-radius: 4px; font-size: 14px; border: 1px solid orange;">Here is a collection of various AI tools for production, use them resposibly. These AI tools are not in any way affliated with this application, this is only a Gateway, any misuse or damages that may arise from using any these tools is not in any way our resposibility but your own.</p><br>
+     
+      <button onclick="closeAlert()">OK</button>
+    </div>
+  </div>
+  <!--end custom alert-->
+  
+  <section class="hero">
+    <div>
+      <h1 style="color: orange"><u><img style="width: 30px;" class="picturee" src="africaOnlineIconn.png"/>AFRICA ONLINE AI GATEWAY</u></h1>
+    </div>
+    <img style="border: solid 1px orange" src="africaOnlineIcon.png" alt="The Falcon"/><hr>
+    
+    <button onclick="color(this);" id="shbtn12">📄 Foreword</button>
+    <div class="safetyTips" id="d12" style="display:none;">
+<p style="color:black;">Here is a collection of various AI tools for production, use them resposibly. These AI tools are not in any way affliated with this application, this is only a Gateway, any misuse or damages that may arise from using any these tools is not in any way our resposibility but your own.</p>
+        </div>
+  </section>
+  <hr>
+
+      <button onclick="color(this); showAlert()" style="width:340px;" id="shbtn2" >🤖 AI Chatbots</button><br>
+      	
+       <div class="safetyTips" id="d2" style="display:none;">
+       		<a href="www.chat.openai.com">•ChatGPT (OpenAI Chatbot)&nbsp;</a> <br>
+       			
+ <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+       	
+       	<a href="www.claude.ai">•Claude (Athropic AI Chatbot)&nbsp;</a> <br>
+       		
+       		<a href="www.grock.ai">•Grock (X AI Chatbot)&nbsp;</a> <br>
+       		
+<a href="www.deepseek.ai">•DeepSeek (China's AI Chatbot)&nbsp;</a> <br>
+	
+	<a href="www.mistral.ai">•Mistral (Amazon AI Chatbot)&nbsp;</a> <br>
+		
+		<a href="www.claude.ai">•Qwen (Alibaba AI Chatbot)&nbsp;</a> <br>
+       	
+<a href="perplexity.ai">•Perplexity (AI Search Engine)&nbsp;</a><br>
+       	
+<a href="poe.com">•Poe (GPT/Claude/Gemini AI)&nbsp;</a>
+        </div><br>
+        	
+      <button onclick="color(this);showAlert()" style="width:340px;" id="shbtn3">📚 AI Presentation</button><br>
+      
+      	 <div class="safetyTips" id="d3" style="display:none;">
+ <a href="notion.so/product/ai">•Canva (Desgning stunning visuals)&nbsp;</a>
+ 
+  <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+      	 	
+<a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+      	 	
+<a href="elevenlabs.io">•Eleven Labs (AI Voice Cloning)&nbsp;</a>
+      </div><br>
+
+      <button onclick="color(this);showAlert()" style="width:340px;" id="shbtn4">🔢 AI Coding Assistant</button><br>
+      	
+       <div class="safetyTips" id="d4" style="display:none;">
+       	 <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+       	
+       	<a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+       	
+  <a href="www.cursor.sh">•Cursor (AI Code Writing Tool)&nbsp;</a><br>
+  
+  <a href="www.replit.com">•Replit (Code in Browser + AI)&nbsp;</a><br>
+  
+  <a href="www.phind.com">•Phind (Developer AI Search Code)&nbsp;</a><br>
+  
+  <a href="www.bolt.new">•Bolt (Build Websites by Talking)&nbsp;</a><br>
+  
+  <a href="www.tldraw.com/make-real">•Tldraw (From Sketch to Website)&nbsp;</a><br>
+  
+  <a href="hugginface.co/spaces">•Huggin Face (Open-source AI)&nbsp;</a><br>
+  
+  <a href="elevenlabs.io">•Eleven Labs (AI Voice Cloning)&nbsp;</a>
+        </div><br>
+
+      <button onclick="color(this);showAlert()" style="width:340px;" id="shbtn5">🖼 AI Image Generation</button><br>
+      	
+       <div class="safetyTips" id="d5" style="display:none;">
+<a href="www.picwish.com">•PicWish (AI Image editing all tricks)&nbsp;</a> <br>
+       	
+ <a href="raphael.ai">•Raphael (Free Image Generation)&nbsp;</a>
+ <br>
+ 	
+ <a href="clipdrop.co">•Clipdrop (One-click Bg Removal)&nbsp;</a><br>
+ 
+ <a href="remove.bg">•Remove Bg (Remove Background)&nbsp;</a><br>
+ 
+ <a href="krea.ai">•Krea (Real-time image Generation)&nbsp;</a><br>
+ 	
+ 	<a href="wwww.skysnail.io">•SkySnail (Create Viral Thumbnails)&nbsp;</a><br>
+ 
+ <a href="cleaup.pictures">•Cleanup Pictures (Erase any Object)&nbsp;</a><br>
+ 
+ <a href="magnific.ai">•Magnific (Free Image Upscaling)&nbsp;</a><br>
+ 
+ <a href="sadtalker.ai">•Sadtalker (Photo to Talking Video)&nbsp;</a><br>
+ 
+ <a href="hedra.com">•Hedra (Talking Digital Human)&nbsp;</a><br>
+ 
+ <a href="elevenlabs.io">•Eleven Labs (AI Voice Cloning)&nbsp;</a><br>
+ 
+  <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+ 
+ <a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+        </ul>
+        </div><br>
+        	
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn7">📰 AI Music Production</button><br>
+      
+       <div class="safetyTips" id="d7" style="display:none;">
+<a href="musiio.com">•Musiio (AI Music Tgging)&nbsp;</a><br>
+
+<a href="suno.com">•Suno (Auto-generate full Songs)&nbsp;</a>
+        </div><br>
+    
+   <button style="width:340px;" id="shbtn6" onclick="color(this);showAlert()">🎬 AI Video Genetation</button><br>
+   
+       <div class="safetyTips" id="d6" style="display:none;">
+<a href="runwayml.com">•Runwayml (AI Video Generation)&nbsp;</a><br>
+
+<a href="opus.pro">•Opus (AI Short Video Editing)&nbsp;</a><br>
+
+<a href="klingai.com">•Klingai (Smooth Chinese Video Gen.)&nbsp;</a><br>
+
+<a href="sadtalker.ai">•Sadtalker (Photo to Talking Video)&nbsp;</a><br>
+
+<a href="Wan.video">•Wan Video (AI Face Swapping)&nbsp;</a><br>
+
+<a href="hedra.com">•Hedra (Talking Digital Human)&nbsp;</a><br>
+	
+	<a href="www.descript.com">•Descript (Edit Podcast and videos)&nbsp;</a><br>
+		
+		<a href="www.syllaby.io">•Syllaby.io (Edit Faceless Videos)&nbsp;</a><br>
+			
+			<a href="wwww.reccloud.com">•RecCloud (Youtube Video Summary)&nbsp;</a><br>
+
+<a href="elevenlabs.io">•Eleven Labs (AI Voice Cloning)&nbsp;</a>
+        </div><br>
+   
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn18">📰 AI Graphic Design</button><br>
+      
+       <div class="safetyTips" id="d18" style="display:none;">
+<a href="notion.so/product/ai">•Canva (Desgning stunning visuals)&nbsp;</a>
+
+<a href="wwww.skysnail.io">•SkySnail (Create Viral Thumbnails)&nbsp;</a><br>
+	
+	 <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+       	
+<a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+        </div><br>
+         
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn8">📄 AI Writing Generation</button><br>
+   
+       <div class="safetyTips" id="d8" style="display:none;">
+       	
+<a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+	
+<a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+       	
+ <a href="jasper.ai/free">•Jasper (Free AI Writing Assistant)&nbsp;</a><br>
+ 
+ <a href="notion.so/product/ai">•Notion (AI Free writing Tool)&nbsp;</a>
+        </div><br>
+        
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn9">📊 AI Data Visualisation</button><br>
+        
+       <div class="safetyTips" id="d9" style="display:none;">
+<a href="gamma.app">•Gamma (AI PPT Generation)&nbsp;</a><br>
+
+<a href="napkin.ai">•Napkin (Text to Infographics)&nbsp;</a>
+        </div><br>
+        
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn10">📧 AI Email Assistant</button><br>
+        
+       <div class="safetyTips" id="d10" style="display:none;">
+<a href="www.copy.ai">•Copy.ai (Copy for E-mails etc)&nbsp;</a>
+        </div><br>
+        
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn11">📝 AI Spreadsheet</button><br>
+        
+       <div class="safetyTips" id="d11" style="display:none;">
+#333333333
+</div><br>
+
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn14">📃 AI Meeting Notes</button><br>
+        
+       <div class="safetyTips" id="d14" style="display:none;">
+<a href="otter.ai">•Otter (Meetig Transcription)&nbsp;</a><br>
+
+ <a href="https://gemini.google.com/app">•Gemini (Google AI Chatbot)&nbsp;</a><br>
+
+<a href="www.chat.openai.com">•ChatGPT (AI Chatbot Assistant)&nbsp;</a> <br>
+</div><br>
+
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn15">💼 AI Workflow Automation</button><br>
+        
+       <div class="safetyTips" id="d15" style="display:none;">
+#33333333
+</div><br>
+
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn16">🗃 AI Knowledge Management</button><br>
+        
+       <div class="safetyTips" id="d16" style="display:none;">
+#33333333
+</div><br>
+
+<button onclick="color(this);showAlert()" style="width:340px;" id="shbtn17">📆 AI Scheduling</button><br>
+        
+       <div class="safetyTips" id="d17" style="display:none;">
+#33333333
+</div><br>
+	
+ <section id="contact">
+  <h2><u>Send Message</u></h2>
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="number" id="phone" placeholder="Your contact number" required />
+    <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+<button onclick="color(this);" type="submit">Send</button>
+  </form>
+</section>
+
+<button onclick="color(this);" style="width:340px;" id="shbtn13">📄 Additional Contact Details</button>
+       <div class="safetyTips" id="d13" style="display:none; color: orange;">
+       	
+       <span>E-mail:</span> <a href="mailto:clementjuma.cmm@gmail.com? subject=your message">&nbsp;&nbsp;
+Send an E-mail&nbsp;&nbsp;
+       		</a><br><br>
+       			
+       	<span>Phone Call:</span> <a href="tel:+265982177920">&nbsp;&nbsp;
+       			Call now&nbsp;&nbsp;
+       				</a><br><br>
+       					
+       	<span>Send SMS:</span> <a href="sms:+265982177920">&nbsp;&nbsp;
+       		Leave an sms&nbsp;&nbsp;
+       		</a><br><br>
+       		
+       		<span>WhatsApp:</span> <a href="https://wa.me/982177920">&nbsp;&nbsp;
+       	Connect on WhatsApp&nbsp;&nbsp;
+       		</a>
+       	</div><br>
+
+<!--floating button-->
+	<button class="floating-btn" onclick="shareWebsite(); color(this);">↪</button>
+<!--end floating button--><br>
+
+<img style="width:110px;height: 110px;" src="SMTechnology133.png" alt="SMTechnology QR Code"/>
+
+<script> document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevents the page from refreshing
+
+    // 1. Enter your WhatsApp number here (with country code, no + or spaces)
+    const phoneNumber = "265982177920"; 
+
+    // 2. Get values from the form
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('phone').value;
+    const message = document.getElementById('message').value;
+
+    // 3. Construct the message string
+    const fullMessage = `Hello! %0A*Name:* ${name} %0A*Contact:* ${contact} %0A*Message:* ${message}`;
+
+    // 4. Create the WhatsApp URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${fullMessage}`;
+
+    // 5. Open WhatsApp in a new tab
+    window.open(whatsappUrl, '_blank').focus();
+  });
+</script>
+
+  <footer>
+    &copy 2026 SM Technology Africa Online AI Gateway. All rights reserved.
+  </footer>
+  
+  <script src="jquery.min.js"></script>
+  <script>
+
+vlibrary=()=>{
+	open("https:///smtechnology133.github.io/africaonline/vlibrary.html");
+}
+
+home=()=>{
+	open("https://smtechnology133.github.io/africaonline/");
+}
+
+ebookStore=()=>{
+	open("https://smtechnology133.github.io/OnlineShopping/onlineShopping.html");
+}
+
+//functione to change button background color on click
+function color(element) {
+  element.style.backgroundColor = "maroon";
+}
+//end functione to change button background color on click
+
+
+	//toggle safety tip 1
+$(document).ready(function() 
+{ 
+
+$("#shbtn1").click(function() 
+{ 
+
+$("#d1").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 2
+$(document).ready(function() 
+{ 
+
+$("#shbtn2").click(function() 
+{ 
+
+$("#d2").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 3
+$(document).ready(function() 
+{ 
+
+$("#shbtn3").click(function() 
+{ 
+
+$("#d3").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 4
+$(document).ready(function() 
+{ 
+
+$("#shbtn4").click(function() 
+{ 
+
+$("#d4").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 5
+$(document).ready(function() 
+{ 
+
+$("#shbtn5").click(function() 
+{ 
+
+$("#d5").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 6
+$(document).ready(function() 
+{ 
+
+$("#shbtn6").click(function() 
+{ 
+
+$("#d6").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 7
+$(document).ready(function() 
+{ 
+
+$("#shbtn7").click(function() 
+{ 
+
+$("#d7").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 8
+$(document).ready(function() 
+{ 
+
+$("#shbtn8").click(function() 
+{ 
+
+$("#d8").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 9
+$(document).ready(function() 
+{ 
+
+$("#shbtn9").click(function() 
+{ 
+
+$("#d9").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 10
+$(document).ready(function() 
+{ 
+
+$("#shbtn10").click(function() 
+{ 
+
+$("#d10").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 11
+$(document).ready(function() 
+{ 
+
+$("#shbtn11").click(function() 
+{ 
+
+$("#d11").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 12
+$(document).ready(function() 
+{ 
+
+$("#shbtn12").click(function() 
+{ 
+
+$("#d12").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 13
+$(document).ready(function() 
+{ 
+
+$("#shbtn13").click(function() 
+{ 
+
+$("#d13").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+
+//toggle safety tip 14
+$(document).ready(function() 
+{ 
+
+$("#shbtn14").click(function() 
+{ 
+
+$("#d14").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 15
+$(document).ready(function() 
+{ 
+
+$("#shbtn15").click(function() 
+{ 
+
+$("#d15").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 16
+$(document).ready(function() 
+{ 
+
+$("#shbtn16").click(function() 
+{ 
+
+$("#d16").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 17
+$(document).ready(function() 
+{ 
+
+$("#shbtn17").click(function() 
+{ 
+
+$("#d17").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//toggle safety tip 18
+$(document).ready(function() 
+{ 
+
+$("#shbtn18").click(function() 
+{ 
+
+$("#d18").toggle(); 
+
+}); 
+
+}); 
+
+//_______________________________
+
+//alert script
+function showAlert() {
+      document.getElementById("alertOverlay").style.display = "block";
+    }
+
+    function closeAlert() {
+      document.getElementById("alertOverlay").style.display = "none";
+    }
+    //End alert script
+    
+    //code to share application
+ 	//universal functione
+    function shareWebsite() {
+      if (navigator.share) {
+        navigator.share({
+          title: document.title,
+          text: 'Check out this website!',
+          url: window.location.href
+        })
+        .then(() => console.log('Thanks for sharing!'))
+        .catch((error) => console.error('Sharing failed:', error));
+      } else {
+        alert("Your browser doesn't support the Web Share API.");
+      }
+    }
+  //end code to share application
+    
+     //floating button script
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  //end floating button script
+</script>
+<script src="jquery.min.js"></script>
+</body>
+</html>
